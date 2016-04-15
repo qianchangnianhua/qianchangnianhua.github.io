@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Web Application</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	{
+		font-family:Tahoma, Geneva, sans-serif;
+	}
+	a{
+		text-decoration: none;
+	}
+	ul{
+		list-style: none;
+	}
+	#header{
+		height: 403px;
+	}
+	#header .top{
+		height: 19px;
+		background-color: #3d3d3d;
+	}
+	#header .logonav{
+		height: 114px;
+		background-image: url(images/1.gif);
+	}
+	#header .logonav-center{
+		width: 915px;
+		height: 114px;
+		margin: 0 auto;
+	}
+	#header .logonav-center .logo{
+		width: 285px;
+		height: 114px;
+		float: left;
+	}
+	#header .logonav-center .logo h1{
+		font-size: 34px;
+		color: #a82400;
+		line-height: 114px;
+	}
+	#header .logonav-center .nav{
+		width: 495px;
+		height: 114px;
+		float:right;
+	}
+	#header .logonav-center .nav li a{
+		float: left;
+		line-height: 114px;
+		margin-left: 45px;
+		font-size: 13px;
+		color: #3b1a23;
+	}
+	#header .logonav-center .nav ul span{display: block;
+		height: 69px;
+		color: #84260c;
+		border-bottom:2px solid #c90302;
+	}
+	#header .logonav-center .nav ul li a:hover{height: 69px;
+		color: #84260c;
+		border-bottom:2px solid #c90302;
+		display: block;
+	}
+	.banner{
+		height: 270px;
+		background-image: url(images/2.gif);
+	}
+	.banner-center{
+		width: 915px;
+		height: 270px;
+		margin: 0 auto;
+	}
+	.banner-center .top1 .left span{
+		height: 26px;
+		border-bottom: 1px dotted #d6ffff;
+	}
+	.top1 .left{
+		width: 477px;
+		height: 227px;
+		float: left;
+	}
+	.top1 .right img{
+		float: left;
+		margin-top: -25px;
+	}
+	h2{
+		padding-top: 38px;
+		font-size: 23px;
+		color: #e4e999;
+	}
+	p{
+		font-size: 11px;
+		line-height: 20px;
+		color: #b1ebf6;
+		margin-top: 16px;
+	}
+	.bottom img{
+		float: left;
+		margin-top: 5px;
+	}
+	.banner-center .bottom ul img:nth-child(1){padding-right: 8px;
+	}
+	.banner-center .bottom ul img:nth-child(3){padding-left: 50px;
+		padding-right: 8px;
+	}
+	.banner-center .bottom ul img:nth-child(5){padding-left: 50px;
+		padding-right: 8px;
+	}
+	.bottom ul li a{
+		float: left;
+		font-size: 16px;
+		color: #ffecc8;
+		line-height: 43px;
+	}
+	#container{
+		height: 306px;
+	}
+	#container .container-center{
+		width: 915px;
+		height: 306px;
+		background-color: #fff;
+		margin: 0 auto;
+	}
+	#container .container-center div{
+		width: 274px;
+		height: 306px;
+		float: left;
+		border-top: 1px solid #ececec;
+	}
+	#container .container-center div:nth-child(2){
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	#container .container-center div span{
+		color: #953920;
+	}
+	#container .container-center h2{
+		font-size: 17px;
+		color: #4b392d;
+		padding-top: 35px;
+	}
+	#container .container-center p{
+		width: 274px;
+		height: 248px;
+		border-top: 1px solid #ececec;
+		font-size: 11px;
+		padding-top: 22px;
+		color: #423b35;
+		margin-top: 1px;
+	}
+	#container .container-center .third{
+		width: 274px;
+		height: 306px;
+		float: left;
+	}
+	#container .container-center .third p{
+		width: 274px;
+		height: 100px;
+	}
+	#container .container-center .third .about{
+		width: 274px;
+		height: 77px;
+		background-color: #f4f4f4;
+		margin-top: 20px;
+		border: 1px solid #ececec;
+	}
+	#container .container-center .third .about p{padding-top: 13px;
+		margin-left: 8px;
+	}
+	#container .container-center .third .about span{color:#7f3834;
+		text-decoration: underline;
+	}
+	#footer{
+		height: 75px;
+		background-color: #fff;
+	}
+	.footer-center{
+		width: 915px;
+		height: 75px;
+		margin: 0 auto;
+		font-size: 12px;
+		border-top: 1px solid #dfdfdf;
+	}
+	.footer-center .left{
+		float: left;
+		padding-top: 21px;
+	}
+	.footer-center .right{
+		float: right;
+		padding-top: 21px;
+		padding-right: 15px;
+	}
+	.footer-center .right img{
+		float: right;
+		margin-top: -20px;
+	}
+	.footer-center span{
+		color: #797979;
+		text-decoration: underline;
+	}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<div class="top"></div>
+		<div class="logonav">
+			<div class="logonav-center">
+			<div class="logo">
+				<h1>Web Application</h1>
+			</div>
+			<div class="nav">
+				<ul>
+					<li><a href="#"><span>about application</span></a></li>
+					<li><a href="#">register</a></li>
+					<li><a href="#">demo</a></li>
+					<li><a href="#">help</a></li>
+					<li><a href="#">contact</a></li>
+				</ul>
+			</div>
+			</div>
+		</div>
+		<div class="banner">
+		<div class="banner-center">
+			<div class="top1">
+				<div class="left">
+					<h2>Welocome to <span>web application</span></h2><p>Sed interdum, lacus et vulputate pellen tesque, velit nulla commodo sem, Lorem ipsum dolor sit amet communitas imperdiet eleifend magna, eget dictum urna to lorem gravida quis vulputate pellen tesque at egestas nulla metus vel sapien! Lorem ipsum dolor sit amet communitas imperdiet eleifend magna, eget dictum urna to lorem gravida quis vulputate pellen tesque, velit nulla commodo sem.</p>
+				</div>
+				<div class="right"><img src="images/3.gif" alt=""></div>
+			</div>
+			<div class="bottom">
+				<ul>
+					<img src="images/4.gif" alt="">
+					<li><b><a href="">shring</a></b></li>
+					<img src="images/5.gif" alt="">
+					<li><b><a href="">date management</a></b></li>
+					<img src="images/6.gif" alt="">
+					<li><b><a href="">collabortion</a></b></li>
+				</ul>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div id="container">
+		<div class="container-center">
+			<div>
+				<h2>What's <span>News?</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer porta, ipsum sit amet ultricies congue, ante pede congue pede, id venenatis ante elit et nulla. Ut lectus nisi, convallis in, eleifend vitae, blandit non, orci. Aliquam eget ante. Cras orci ante, interdum ac, euismod et, euismod in, eros. Cras vestibulum elit quis arcu. Suspendisse lectus ligula, posuere ut, ullamcorper eget, lobortis et, tellus. Supendisse pulvinar metus.</p>
+			</div>
+			<div>
+				<h2>User <span>Statistic</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer porta, ipsum sit amet ultricies congue, ante pede congue pede, id venenatis ante elit et nulla. Ut lectus nisi, convallis in, eleifend vitae, blandit non, orci. Aliquam eget ante. Cras orci ante, interdum ac, euismod et, euismod in, eros. Cras vestibulum elit quis arcu. Suspendisse lectus ligula, posuere ut, ullamcorper eget, lobortis et, tellus. Suspendisse pulvinar metus.</p>
+			</div>
+			<div class="third">
+				<h2>About <span>Web Application</span></h2>
+				<p>Sed interdum, lacus et vulputate pellen tesque, velit nulla commodo sem, at egestas nulla metus vel sapien!If you liked this templates, you might like some other Free or Commercial templates from Solucija.</p>
+				<div class="about">
+					<p>If you liked this templates, you might like some other <span>Free</span> or <span>Commercial</span> templates from <span>Solucija.</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="footer-center">
+			<div class="left">@copyright 2007 <span>web application</span> 'all right reserch</div>
+			<div class="right">design: 	<span>luka cvrk</span> 'sponsor: <span>credit cards</span>	 <img src="images/7.gif" alt=""></div>
+		</div>
+	</div>
+</body>
+</html>

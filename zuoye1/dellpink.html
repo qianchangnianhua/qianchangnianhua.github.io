@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>dellpink</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	ul{
+		list-style: none;
+	}
+	a{
+		text-decoration: none;
+	}
+	.clear{
+		clear: both;
+	}
+	li{
+		font-style: 8px;
+	}
+	#header{
+		width: 930px;
+		height: 482px;
+		margin: 0 auto;
+	}
+	.top{
+		width: 930px;
+		height: 102px;
+	}
+	.logo{
+		width: 109px;
+		height: 102px;
+		background-image: url(images/pink01.jpg);
+		float: left;
+	}
+	.nav{
+		width: 502px;
+		height: 102px;
+		float: left;
+		 font-family: "Arial Black", Gadget, sans-serif;
+	}
+	.nav ul li{
+		margin-left: 33px;
+		margin-top: 48px;
+		float: left;
+		font-size: 12px;
+	}
+	.nav span{
+		display: block;
+	}
+	.nav ul img{
+		margin-left: 13px;
+		margin-top: 59px;
+		float: left;
+	}
+	.search{
+		width: 319px;
+		height: 102px;
+		float: left;
+	}
+	.search ul{
+		float: right;
+	}
+	.search ul li{
+		font-size: 10px;
+		float: left;
+		 font-family: "Times New Roman", Times, serif;
+		 color: #255bb3; 
+	}
+	.search .midbox{
+		width: 201px;
+		height: 25px;
+		background-image: url(images/pink02.jpg);
+		margin-top: 16px;
+		float: right;
+	}
+	.search p{
+		float: right;
+		font-size: 10px;
+		margin-top: 12px;
+		font-family: Tahoma,Helvetica,Arial,"微软雅黑",serif;
+	}
+	.banner{
+		width: 930px;
+		height: 380px;
+		background-image: url(images/pink03.jpg);
+	}
+	#container{
+		width: 932px;
+		height: 577px;
+		margin: 0 auto;
+	}
+	#container .main_top{
+		width: 932px;
+		height: 308px;
+	}
+	#container .main_top h2{
+		color: #100100;
+		margin-left: 22px ; 
+		font-family: "Arial Black", Gadget, sans-serif; 
+		font-size: 10px;
+	}
+	#container .main_top ul{
+		list-style-image: url(images/pink07.jpg);
+	}
+	#container .main_top ul li{
+		font-size: 10px;
+		font-family: Verdana, Geneva, sans-serif;
+	}
+	#container .main_top .box1{
+		width: 300px;
+		height: 285px;
+		margin-top: 23px;
+		float: left;
+		border: 1px solid #eee;
+	}
+	#container .main_top .box1 ul{
+		margin-left: 30px;
+	}
+	#container .main_top .box1 ul li{
+		padding-top: 13px;
+	}
+	#container .main_top .box2{
+		width: 300px;
+		height: 285px;
+		margin-top: 23px;
+		float: left;
+		border: 1px solid #eee;
+	}
+	#container .main_top .box2 ul{
+		margin-left: 27px;
+		margin-top: 13px;
+	}
+	#container .main_top .box3{
+		width: 300px;
+		height: 285px;
+		margin-top: 23px;
+		float: left;
+		border: 1px solid #eee;
+		margin-right: 0px;
+	}
+	#container .main_top .box3 ul{
+		margin-left: 47px;
+	}
+	#container .main_top .box3 ul hr{
+		margin: 23px;
+	}
+	.main_center{
+		width: 932px;
+		height: 47px;
+		background-image: url(images/pink08.jpg);
+	}
+	.main_bottom{
+		width: 932px;
+		height: 222px;
+		font: 14px / 1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;border: 1px solid #eee;
+	}
+	.main_bottom h2{
+		font-size: 15px;
+	}
+	.main_bottom ul li{
+		margin-bottom: 3px;
+	}
+	.main_bottom .boxa{
+		width:180px;
+		margin-left: 20px;
+		margin-top: 23px;
+		float: left;
+	}
+	.main_bottom .boxa ul li{
+		font-size: 8px;
+		margin-left: 13px;
+		list-style-image: url(images/pink07.jpg);
+	}
+	.main_bottom .boxb{
+		width: 180px;
+		margin-top: 23px;
+		float: left;
+	}
+	.main_bottom .boxb ul li{
+		font-size: 8px;
+		margin-left: 13px;
+		list-style-image: url(images/pink07.jpg);
+	}
+	.main_bottom .boxc{
+		width: 180px;
+		margin-top: 23px;
+		float: left;
+	}
+	.main_bottom .boxc ul li{
+		font-size: 8px;
+		margin-left: 13px;
+		list-style-image: url(images/pink07.jpg);
+	}
+	.main_bottom .boxd{
+		width: 180px;
+		margin-top: 23px;
+		float: left;
+	}
+	.main_bottom .boxd ul li{
+		font-size: 8px;
+		margin-left: 13px;
+		list-style-image: url(images/pink07.jpg);
+	}
+	.main_bottom .boxe{
+		width: 180px;
+		margin-top: 23px;
+		float: left;
+	}
+	.main_bottom .boxe ul li{
+		font-size: 8px;
+		margin-left: 13px;
+		list-style-image: url(images/pink07.jpg);
+	}
+	#footer{
+		width: 932px;
+		height: 122px;
+		margin: 0 auto;
+	}
+	#footer p{
+		font-family: "Times New Roman", Times, serif;
+		font-size: 10px;
+		float: left;
+		text-align: center;
+		margin-top: 33px;
+		margin-left: 61px;
+		color: #c3d5e9;
+	}
+
+	</style>
+</head>
+<body>
+	<div id="header">
+		<div class="top">
+			<div class="logo"></div>
+			<div class="nav">
+					<ul>
+					<li><a href=""><span>For</span><span>Home</span></a></li><img src="images/09.jpg" alt="">
+					
+					<li><a href=""><span>For Small and</span><span>Medium Business</span></a></li><img src="images/09.jpg" alt="">
+					
+					<li><a href=""><span>For Public</span><span>Sector</span></a></li><img src="images/09.jpg" alt="">
+					
+					<li><a href=""><span>For Large</span><span>Enterprise</span></a></li><img src="images/09.jpg" alt="">
+					<div class="clear"></div>
+					
+				</ul>
+			</div>
+			<div class="search">
+				<ul>
+					<li><a href="">My Account</a>|</li>
+					<li><a href="">Premier Login</a>|</li>
+					<li><a href="">Technical Support</a>|</li>
+					<li><a href="">Order Support</a></li>
+				</ul>
+				<div class="midbox"></div>
+				<p>Buy Online or Call 1-800-WWW-DELL</p>
+			</div>
+		</div>
+		<div class="banner"></div>
+	</div>
+	<div id="container">
+		<div class="main_top">
+			<div class="box1">
+				<h2><strong>Dell Services</strong></h2>
+				<img src="images/pink04.jpg" alt="">
+				<ul>
+					<li><strong>Achieve the highest level of clinical performance</strong> with our consulting services.</li>
+					<li><strong>Optimize your Healthcare Information System </strong>lecveraging our experience with all the major HIS applications.</li>
+				</ul>
+			</div>
+			<div class="box2">
+				<h2><strong>Headline</strong></h2>
+				<img src="images/pink05.jpg" alt="">
+				<ul>
+					<li>Record Results Deliverred in Fiscal Year 2011</li>
+					<li>Dells New Cloud-Based Services for Healthcare</li>
+					<li>Dell acquires Compellent Technologies,lnc.</li>
+					<li>Dell acquires SecureWorks,lnc.</li>
+					<li>Dell acquires lnSite One,lnc.</li>
+				</ul>
+			</div>
+			<div class="box3">
+				<h2><strong>Dell Deals</strong></h2>
+				<img src="images/pink06.jpg" alt="">
+				<ul>
+					<li>Dell's Signature Sale!Save up to 45% off select system.</li><hr>
+					<li>Deals for Home</li>
+					<li>Deal for Small & Mesium Buiness</li>
+				</ul>
+			</div>
+		</div>
+		<div class="main_center"></div>
+		<div class="main_bottom">
+			<div class="boxa">
+				<h2>Shop</h2>
+				<ul>
+					<li>Employee & Student Discounts</li>
+					<li>Home & Home Office</li>
+					<li>Small & Medium Buiness</li>
+					<li>Large Buiness</li>
+					<li>Public Sector</li>
+					<li>Partner</li>
+					<li>Dell Outlet</li>
+				</ul>
+			</div>
+			<div class="boxb">
+				<h2>Community</h2>
+				<ul>
+					<li>Join the Discussion</li>
+					<li>Share Your Ideas</li>
+					<li>Read our Blog</li>
+					<li>Ratings & Reviews</li>
+					<li>Community Home</li>
+				</ul>
+			</div>
+			<div class="boxc">
+				<h2>Support</h2>
+				<ul>
+					<li>All Support Options</li>
+					<li>Drivers & Downloads</li>
+					<li>Product Support</li>
+					<li>Recall Information</li>
+				</ul>
+			</div>
+			<div class="boxd">
+				<h2>Company Information</h2>
+				<ul>
+					<li>About Dell</li>
+					<li>Corporate Responsibility</li>
+					<li>Careers</li>
+					<li>Investors</li>
+					<li>Newsroom</li>
+					<li>The power to do more</li>
+				</ul>
+			</div>
+			<div class="boxe">
+				<h2>My Account</h2>
+				<ul>
+					<li>Sign-in/Register</li>
+					<li>Order Status</li>
+					<li>Order support</li>
+					<li>Dell Subscription Center</li>
+					<li>Make a Payment</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<p>
+			<a href="">Laptops</a>
+			|
+			<a href="">Desktops</a>
+			|
+			 <a href="">Buiness</a>
+			|
+			 <a href="">Laptop</a>
+			|
+			 <a href="">Buiness</a>
+			 |
+			 <a href="">Desktops</a>
+			 |
+			 <a href="">Workstations</a>
+			 |
+			 <a href="">Servers</a>
+			 |
+			 <a href="">storage</a>
+			 |
+			 <a href="">Services</a>
+			 |
+
+			 <a href="">Monitors</a>
+			 |
+			 <a href="">Printers</a>
+			 |
+			 <a href="">LCD TVs</a>
+			 |
+			 <a href="">Electronics</a>
+			 |
+			 <a href="">Top Searches</a>
+			 <br>
+			 <a href=""></a>
+			 <a href="">@2011 Dell</a>
+			 |
+			 <a href="">About Dell</a>
+			 |
+			 <a href="">RegulatoryCompliance</a>
+			 |
+			 <a href="">Terms of Sale</a>
+			 |
+			 <a href="">Unresolveed lssues</a>
+			 |
+			 <a href="">Privacy</a>
+			 |
+			 <a href="">About Our ADs and Emails</a>
+			 |
+			 <a href="">Dell Recycling</a>
+			 |
+			 <a href="">Contact</a>
+			 |
+			 <a href="">Site Map</a>
+			 |
+			 <a href="">[+]Feedback</a>
+			 <br>
+			 <a href="">AT</a>
+			 |
+			 <a href="">AU</a>
+			 |
+			 <a href="">BE</a>
+			 |
+			 <a href="">BR</a>
+			 |
+			 <a href="">CA</a>
+			 |
+			 <a href="">CH</a>
+			 |
+			 <a href="">CL</a>
+			 |
+			 <a href="">CN</a>
+			 |
+			 <a href="">CO</a>
+			 |
+			 <a href="">DE</a>
+			 |
+			 <a href="">DK</a>
+			 |
+			 <a href="">ES</a>
+			 |
+			 <a href="">FR</a>
+			 |
+			 <a href="">HK</a>
+			 |
+			 <a href="">IE</a>
+			 |
+			 <a href="">IN</a>
+			 |
+			 <a href="">IT</a>
+			 |
+			 <a href="">JP</a>
+			 |
+			 <a href="">KR</a>
+			 |
+			 <a href="">ME</a>
+			 |
+			 <a href="">MX</a>
+			 |
+			 <a href="">MY</a>
+			 |
+			 <a href="">NL</a>
+			 |
+			 <a href="">NO</a>
+			 |
+			 <a href="">PA</a>
+			 |
+			 <a href="">PR</a>
+			 |
+			 <a href="">RU</a>
+			 |
+			 <a href="">SE</a>
+			 |
+			 <a href="">SG</a>
+			 |
+			 <a href="">Uk</a>
+			 |
+			 <a href="">VE</a>
+			 |
+			 <a href="">ALL</a>
+			 <br>
+			 <img src="images/10.gif" alt="">
+			 <a href="">Large Text</a> 
+		</p>
+	</div>
+</body>
+</html>
